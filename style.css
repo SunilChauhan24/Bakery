@@ -1,0 +1,499 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #111111;
+    /* scroll-behavior: smooth; */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 13px 14px;
+    transition: all 0.5s ease;
+    background: #242424;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.logo i {
+    vertical-align: middle;
+    margin-right: 8px;
+    color: #0481b7;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 25px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover {
+    color: #0481b7;
+}
+
+.navbar a.active {
+    color: #0481b7;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: #0481b7;
+    border-radius: 3rem;
+    box-shadow: #0481b7 0px 1px 25px;
+}
+
+.nav-icons i {
+    vertical-align: middle;
+    font-size: 25px;
+    color: #111111;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+#menu-bar {
+    font-size: 32px;
+    color: #111111;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-icons i:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 30px 10% 70px;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-img img {
+    width: 100%;
+    height: auto;
+}
+
+.home-text h1 {
+
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.home-text span {
+    color: #0481b7;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #393838;
+    color: #0481b7;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 2rem;
+    transition: all 0.50s ease;
+}
+
+.btn i {
+    vertical-align: middle;
+    margin-left: 9px;
+    font-size: 22px;
+}
+
+.btn:hover {
+    background: #0481b7;
+    color: #111111;
+    box-shadow: #0481b7 0px 1px 25px;
+}
+
+.btn1 {
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #0481b7;
+    color: #0481b7;
+    transition: all 0.50s ease;
+}
+
+.btn1:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    padding: 30px 14% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    text-align: center;
+    /* padding-bottom: 100px; */
+}
+
+.container-main {
+    height: 50vh;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.container-box {
+    padding: 40px 40px 40px 40px;
+    background: #393838;
+    border-radius: 3rem;
+}
+
+.container-box:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    box-shadow: 0px 0px 25px #0481b7;
+
+}
+
+.container-box img {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+
+}
+
+.container-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.container-box a {
+    /* color: rgb(224, 122, 122); */
+    color: #d4cccc;
+    letter-spacing: 1px;
+    transition: all 0.50s ease;
+    font-size: 15px;
+}
+
+.container-box a:hover {
+    /* transform: scale(2.3); */
+    color: #0481b7;
+}
+
+/* -----------------about------------------ */
+
+.About {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    /* padding-top: 100px; */
+    margin-top: 150px;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+
+.about-text h2 {
+    font-size: 39px;
+    color: #d4cccc;
+    /* line-height: 1.2rem; */
+    margin-bottom: 2rem;
+}
+
+.about-text span {
+    color: #0481b7;
+    text-shadow: 0px 0px 4px #0481b7;
+}
+
+.about-text p {
+    color: #877e7e;
+    line-height: 20px;
+    margin-bottom: 3rem;
+}
+
+/* ----------------our shop--------------- */
+
+.shop-main {
+    width: 100%;
+
+    display: flex;
+    gap: 2rem;
+
+    padding: 50px 90px 30px;
+    margin: auto;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+
+.shop {
+    position: relative;
+    padding-bottom: 30px;
+    height: 180vh;
+    padding-top: 115px;
+}
+
+.shop-text {
+    text-align: center;
+}
+
+.shop-text h4 {
+    font-size: 20px;
+    color: #0481b7;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.shop-text h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.shop-contents {
+    width: 100%;
+    /* height: auto; */
+    text-align: center;
+    transition: all 0.50s ease;
+}
+
+.shop-contents:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.shop1 {
+    background: #393838;
+    border-radius: 2rem;
+    margin: auto;
+    width: 100%;
+
+}
+.shop1 a{
+    color: #797575;
+    font-size: 20px;
+}
+
+.btn2{
+
+    background: #797575;
+    border-radius: 1.5rem;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 400;
+    padding: 10px 15px;
+    transition: all 0.50s ease;
+    
+}
+
+.btn2:hover{
+    color:#111111;
+    background: #0481b7;
+}
+
+.shop1 img {
+    margin: auto;
+    width: 100%;
+    /* height: auto; */
+}
+
+.shop1 h3 {
+    color: #e8db28;
+    padding: 10px;
+    text-shadow: 0px 0px 40px #e6d812;
+
+}
+
+.shop1 a {
+    background-color: #494545;
+}
+
+.row-bttn {
+    /* align-items: center; */
+    padding-left: 40%;
+    padding-top: 50px;
+}
+
+
+.shop1 h2 {
+    color: #f1e9de94;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* --------------------- review---------------------------- */
+
+.review {
+    width: 100%;
+    height: 120vh;
+    /* height: auto; */
+    padding-top: 8%;
+    position: relative;
+    /* padding: 80px 30px 35px 40px; */
+}
+
+.review-text h4 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #0481b7;
+    padding: 10px 20px 30px 10px;
+    border-bottom: 5px solid #a89a9a;
+
+}
+
+.review-main {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.review-box p {
+    color: #d4cccc;
+    margin: 29px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.review-box {
+    background: #393838;
+    border-radius: 2rem;
+    margin: 20px;
+    width: 100%;
+    transition: all 0.50s ease;
+}
+
+.review-box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.reviw-img img {
+    width: 100%;
+    max-width: 80px;
+    border-radius: 7rem;
+    padding-bottom: 5px;
+}
+
+.review-containts h2 {
+    color: #0481b7;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.review-containts i {
+    margin: auto;
+    color: #d05c0f;
+}
+
+/* -----------------------contect----------------------- */
+
+.contect {
+    position: relative;
+    width: 100%;
+    padding-top: 10%;
+    height: 100vh;
+}
+
+.contect-text h2 {
+    color: #0481b7;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.contect-text p {
+    color: #797575;
+    text-align: center;
+    /* font-size: 15px; */
+    font-weight: 400;
+}
+
+.contect-main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.contect-map iframe {
+    /* width: 80%; */
+    margin: 70px;
+    border-radius: 1rem;
+}
+
+.contect-main2 {
+    height: 500px;
+    /* width: 100%; */
+    /* padding-top: 150px; */
+    margin: auto;
+    margin-top: 180px;
+    /* background-color: #c77f0b; */
+    /* margin: auto; */
+    /* border-radius: 1rem; */
+    cursor: pointer;
+}
+
+.contect-text2 i {
+    color: #2eccd1;
+    font-size: 30px;
+    padding-bottom: 10px;
+
+}
+
+.contect-text2 p {
+    font-size: 18px;
+    padding-bottom: 25px;
+    color: #8d7a6d;
+}
+
+/* ----------------------media queryies-------------- */
+
+@media (max-width: 700px) {
+
+    .shop-main {
+        flex-direction: column;
+    }
+
+}
